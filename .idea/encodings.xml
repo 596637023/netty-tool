@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/pom.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/dx/netty/client/http/NettyHttpClient.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/dx/netty/client/http/NettyHttpClientInboundHandler.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/dx/netty/client/ws/WebSocketClient.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/dx/netty/client/ws/WsClientHandler.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/dx/netty/client/ws/WsClientInitializer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/dx/netty/netty/client" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/dx/netty/server/http/NettyHttpServer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/dx/netty/server/http/NettyHttpServerHandler.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="GBK" />
+  </component>
+</project>
