@@ -9,7 +9,7 @@
     <file url="file://$PROJECT_DIR$/src/main/java/com/dx/netty/client/ws/WsClientInitializer.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/dx/netty/server/http/NettyHttpServer.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/dx/netty/server/http/NettyHttpServerHandler.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/dx/nio/FileUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/dx/nio/util/FileUtil.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
