@@ -60,7 +60,7 @@ public class ToolConvert {
      */
     public static String bytesToGB2312(byte[] srcIn) {
 
-        if(srcIn == null) {
+        if (srcIn == null) {
             return null;
         }
 
@@ -439,7 +439,7 @@ public class ToolConvert {
 
 
     public static void main(String[] args) {
-        System.out.println(new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date(Long.valueOf(1560848427+"000"))));
+        System.out.println(new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date(Long.valueOf(1560848427 + "000"))));
     }
 
     public static String BCDtoString(byte bcd) {
@@ -480,7 +480,7 @@ public class ToolConvert {
         int i = 0;
         if (bs.length == 3) {
             sb.append("20");
-        }else{
+        } else {
             sb.append(BCDtoString(bs[i++]));
         }
         sb.append(BCDtoString(bs[i++]));
@@ -587,7 +587,7 @@ public class ToolConvert {
 
     public static String bytesToGBKStr(byte[] bytes) {
         try {
-           return new String(bytes, "GBK").trim();
+            return new String(bytes, "GBK").trim();
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }

@@ -31,8 +31,8 @@ public class NettyHttpClientInboundHandler extends ChannelInboundHandlerAdapter 
         ctx.writeAndFlush(request);
     }
 
-	@Override
-	public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+    @Override
+    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         if (msg instanceof HttpResponse) {
             HttpResponse response = (HttpResponse) msg;
             System.out.println("CONTENT_TYPE:" + response.headers().get(HttpHeaderNames.CONTENT_TYPE));
@@ -40,10 +40,10 @@ public class NettyHttpClientInboundHandler extends ChannelInboundHandlerAdapter 
         if (msg instanceof HttpContent) {
             HttpContent content = (HttpContent) msg;
             ByteBuf buf = content.content();
-            byte[] con=new byte[buf.readableBytes()];
+            byte[] con = new byte[buf.readableBytes()];
             buf.readBytes(con);
             System.out.println(ToolConvert.bytesToHexStr(con));
             buf.release();
-		}
-	}
+        }
+    }
 }

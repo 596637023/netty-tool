@@ -44,7 +44,7 @@ public class WsClientHandler extends SimpleChannelInboundHandler<ByteBuffer> {
 
     @Override
     protected void channelRead0(ChannelHandlerContext context, ByteBuffer data) {
-        String msg=new String (data.array(), CharsetUtil.UTF_8);
+        String msg = new String(data.array(), CharsetUtil.UTF_8);
         log.info("接收到客户端的响应为:{}", msg);
         //自定义处理消息
         context.channel().writeAndFlush(new TextWebSocketFrame("呵呵"));

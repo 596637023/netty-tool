@@ -13,8 +13,8 @@ import io.netty.handler.codec.http.HttpResponseDecoder;
 
 public class NettyHttpClient {
 
-	public void connect(String host, int port) throws Exception {
-		EventLoopGroup workerGroup = new NioEventLoopGroup();
+    public void connect(String host, int port) throws Exception {
+        EventLoopGroup workerGroup = new NioEventLoopGroup();
         Bootstrap b = new Bootstrap();
         b.group(workerGroup);
         b.channel(NioSocketChannel.class);
@@ -32,10 +32,10 @@ public class NettyHttpClient {
 
         // Start the client.
         ChannelFuture f = b.connect(host, port).sync();
-	}
+    }
 
-	public static void main(String[] args) throws Exception {
-		NettyHttpClient client = new NettyHttpClient();
-		client.connect("10.8.0.46", 60004);
-	}
+    public static void main(String[] args) throws Exception {
+        NettyHttpClient client = new NettyHttpClient();
+        client.connect("10.8.0.46", 60004);
+    }
 }
