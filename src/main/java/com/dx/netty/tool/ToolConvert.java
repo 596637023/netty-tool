@@ -1,4 +1,5 @@
-package main.java.netty.tool;
+package com.dx.netty.tool;
+
 
 
 import io.netty.util.internal.StringUtil;
@@ -11,6 +12,9 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
 
+/**
+ * 各种进制转换类
+ */
 public class ToolConvert {
 
     /* - - - - - - - -  base - - - - - - - - - - - - - - - - - - - */
